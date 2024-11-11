@@ -5,41 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./assets/style.css" />
     <title>The Cranberry Ginger Ale Website</title>
-
 </head>
+
 <body>
     <header>
      <nav class="text-right">
-          <ul id="navigation-list">
-              <li><a href="https://github.com/NeonValkyrie/m01mp-landing-page">Repo</a></li>
-               <li><a href="https://github.com/NeonValkyrie">Profile</a></li>
-                <li>Contact</li>
+          <ul>
+                <li><a href="https://github.com/NeonValkyrie/m01mp-landing-page">Repo</a></li>
+                <li><a href="https://github.com/NeonValkyrie">Profile</a></li>
+                <li><a href="#contact">Contact</a></li>
          </ul>
       </nav>
     </header>
 
-    <section>
-        <h1>Canada Dry Cranberry Ginger Ale</h1>
-        <img src="./assets/canada_dry_cranberry_bordered.png" alt="a can of Canada Dry Cranberry Ginger Ale on a dark green background.">
-        <p>Canada Dry Cranberry Ginger Ale... a sign of the times. Take your darkest hours to the next level with the fine taste of the cranberry bog.</p>
-    </section>
+    <main>
+        <h1 class="text-center">Canada Dry Cranberry Ginger Ale</h1>
+        <figure>
+            <img src="./assets/canada_dry_cranberry_bordered.png" alt="a can of Canada Dry Cranberry Ginger Ale on a dark green background.">
+            <figcaption class="text-center">The taste of ginger and cranberry is something you'll never regret. Coming soon, make the decision.</figcaption>
+        </figure>
+        <section>
+            <h2 class="text-center">Discover What's Next</h2>
+            <form>
+                <ul>
+                    <li><label class="text right" for="name">Name:</label>
+                        <input type="text" id="name" name="user-name">
+                    </li> 
+                    <li><label class="text right" for="email">Email:</label>
+                        <input type="text" id="email" name="user-email">
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <button type="submit">SEND</button>
+                </div>
+            </form>
+        </section>
+    </main>
 
-    <section>
-        <h2>Discover What's Next</h2>
-        <ul>
-            <li><label class="text right" for="name">Name:</label>
-                <input type="text" id="name" name="user-name">
-            </li> 
-            <li><label class="text right" for="email">Email:</label>
-                <input type="text" id="email" name="user-email">
-            </li>
-            <button type="submit">SEND</button>
-        </ul>
-    </section>
-
-    <footer>
-        <p>Licensed under GNU 3.0 Public License.</p>
-        <p>Created in 2024 by NeonValkyrie.</p>
+    <footer class="text-center">
+        Licensed under GNU 3.0 Public License. Created in 2024 by NeonValkyrie.
     </footer>
 </body>
 </html>
